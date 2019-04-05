@@ -14,8 +14,9 @@ class Anagram
     anagram = []
     array.each do |c_word|
     #  binding.pry
-      c_word.split(//).sort == @word_array.sort
-      anagram << c_word
+      if c_word.split(//).sort == @word_array.sort
+        anagram << c_word
+      end
     end
     anagram
   end
