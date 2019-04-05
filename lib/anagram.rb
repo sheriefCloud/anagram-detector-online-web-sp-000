@@ -13,7 +13,7 @@ class Anagram
   def match(array)
     anagram = nil
     array.any? do |c_word|
-      binding.pry
+    #  binding.pry
       c_word.split(//).sort == @word_array.sort
       anagram = c_word
     end
@@ -21,3 +21,4 @@ class Anagram
   end
 
 end
+
