@@ -8,12 +8,12 @@ class Anagram
     @word_array = @word.split(//)
   end
 
-  
+
 
 
   def match(array)
     array.each do |c_word|
-      
+
     end
   end
 
