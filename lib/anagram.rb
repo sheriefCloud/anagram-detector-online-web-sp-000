@@ -12,9 +12,12 @@ class Anagram
 
 
   def match(array)
+    anagram = nil
     array.any? do |c_word|
       c_word.split(//).sort == @word_array.sort
+      anagram = c_word
     end
+    anagram
   end
 
 
