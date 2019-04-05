@@ -10,11 +10,6 @@ class Anagram
     @word_array = @word.split(//)
   end
 
-  def sort
-
-  end
-
-
   def match(array)
     anagram = nil
     array.any? do |c_word|
@@ -25,8 +20,5 @@ class Anagram
     anagram
   end
 
+end
 
-
-
-
-end# Your code goes here!
