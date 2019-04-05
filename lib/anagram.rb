@@ -1,3 +1,5 @@
+require 'pry'
+
 class Anagram
 
   attr_accessor :word, :word_array
@@ -8,12 +10,15 @@ class Anagram
     @word_array = @word.split(//)
   end
 
-
+  def sort
+    
+  end
 
 
   def match(array)
     anagram = nil
     array.any? do |c_word|
+      binding.pry
       c_word.split(//).sort == @word_array.sort
       anagram = c_word
     end
